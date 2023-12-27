@@ -1,4 +1,4 @@
-from data.config import ADMINS,BOT
+from data.config import ADMINS
 from aiogram import Dispatcher
 from loader import bot
 import logging
