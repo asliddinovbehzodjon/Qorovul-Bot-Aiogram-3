@@ -2,7 +2,6 @@ from aiogram.filters import CommandStart,Command
 from aiogram import types
 from loader import dp,bot
 from filters import IsPrivate
-from data.config import BOT
 from api import create_user
 @dp.message(CommandStart(),IsPrivate())
 async def start(message:types.Message):
