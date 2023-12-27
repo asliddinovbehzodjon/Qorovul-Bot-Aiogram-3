@@ -13,8 +13,8 @@ def create_user(name:str,telegram_id):
         }
         response = requests.post(url=f"{URL}/user/", data=data)
         return response.status_code
-    except:
-        pass
+    except Exception as e:
+        print(e)
 # Get All User
 def get_users():
     try:
